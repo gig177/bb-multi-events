@@ -1,6 +1,6 @@
 {
   "name": "@gig177/bb-utils",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "registry": "npm",
   "description": "Backbone utilities",
   "main": "lib/index.js",
