@@ -12,7 +12,9 @@
     "backbone": "^1.2.3",
     "chai": "^3.4.1",
     "sinon": "^1.17.2",
-    "sinon-chai": "^2.8.0",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
     "underscore": "^1.8.3"
   }
 }
