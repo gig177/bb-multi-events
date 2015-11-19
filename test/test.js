@@ -18,10 +18,10 @@ describe('Subscribe on multiple events', () => {
 
         onAll({ 'animation-complete': view, 'sync': collection }, { 'render-page': view }, spy);
 
-        view.trigger('animation-complete'); 
+        view.trigger('animation-complete');
         collection.trigger('sync');
 
-        view.trigger('animation-complete'); 
+        view.trigger('animation-complete');
         view.trigger('render-page');
 
         collection.trigger('sync');
@@ -33,9 +33,19 @@ describe('Subscribe on multiple events', () => {
         var spy = sinon.spy();
 
         onAll({ 'animation-complete': view, 'sync': collection }, { 'render-page': view }, spy);
-        view.trigger('animation-complete'); 
+        view.trigger('animation-complete');
 
         expect(spy).to.have.not.been.called;
+    });
+    it('should be called without cleaner', () => {
+        var spy = sinon.spy();
+
+        onAll({ 'animation-complete': view, 'sync': collection }, spy);
+
+        view.trigger('animation-complete');
+        collection.trigger('sync');
+
+        expect(spy).to.have.been.calledOnce;
     });
 });
 describe('Subscribe on multiple events once', () => {
