@@ -1,13 +1,25 @@
 {
   "name": "bb-utils",
+  "registry": "npm",
   "version": "0.1.0",
-  "description": "",
+  "description": "Backbone utilities",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gig177/bb-utils.git"
+  },
+  "author": {
+    "name": "Evgeniy Poturaev",
+    "email": "gig177@ya.ru"
+  },
   "scripts": {
     "test": "mocha"
   },
   "author": "Evgeniy Poturaev",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gig177/bb-utils/issues"
+  },
   "devDependencies": {
     "backbone": "^1.2.3",
     "chai": "^3.4.1",
@@ -16,5 +28,11 @@
   },
   "dependencies": {
     "underscore": "^1.8.3"
+  },
+  "jspm": {
+    "main": "./index",
+    "directories": {
+      "lib": "lib"
+    }
   }
 }
