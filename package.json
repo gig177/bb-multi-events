@@ -1,15 +1,18 @@
 {
-  "name": "on_all",
+  "name": "bb-utils",
   "version": "0.1.0",
   "description": "",
-  "main": "on_all.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
-  "author": "",
+  "author": "Evgeniy Poturaev",
   "license": "ISC",
-  "dependencies": {
-    "mocha": "^2.3.4",
+  "devDependencies": {
+    "backbone": "^1.2.3",
+    "chai": "^3.4.1",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0",
     "underscore": "^1.8.3"
   }
 }
