@@ -20,3 +20,11 @@ view.trigger('render-page'); // will clean the events stack
 collection.trigger('sync');
 view.trigger('animation-complete'); // will trigger the =>[1] statement
 ```
+
+### Instalation:
+```
+$ jspm install npm:bb-bulti-events
+```
+```
+$ npm install bb-multi-events
+```
