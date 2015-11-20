@@ -1,12 +1,12 @@
 {
-  "name": "@gig177/bb-utils",
+  "name": "bb-multi-events",
   "version": "0.1.3",
   "registry": "npm",
-  "description": "Backbone utilities",
-  "main": "lib/index.js",
+  "description": "Backbone multiple events catcher",
+  "main": "index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gig177/bb-utils.git"
+    "url": "https://github.com/gig177/bb-multi-events.git"
   },
   "author": {
     "name": "Evgeniy Poturaev",
@@ -18,7 +18,7 @@
   "author": "Evgeniy Poturaev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gig177/bb-utils/issues"
+    "url": "https://github.com/gig177/bb-multi-events/issues"
   },
   "devDependencies": {
     "backbone": "^1.2.3",
@@ -28,11 +28,5 @@
   },
   "dependencies": {
     "underscore": "^1.8.3"
-  },
-  "jspm": {
-    "main": "./index",
-    "directories": {
-      "lib": "lib"
-    }
   }
 }

@@ -1,6 +1,6 @@
 var _ = require('underscore'),
     Events = require('backbone').Events;
-var onAll = require('../lib/on_all');
+var onAll = require('../on_all');
     
 var view = _.extend({}, Events),
     collection = _.extend({}, Events);
