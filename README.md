@@ -3,7 +3,7 @@ Simple example:
 ```javascript
 var _ = require('underscore'),
     Events = require('backbone').Events;
-var onAll = require('../on_all');
+var onAll = require('bb-multi-events/on_all');
     
 var view = _.extend({}, Events),
     collection = _.extend({}, Events);
@@ -19,4 +19,12 @@ view.trigger('render-page'); // will clean the events stack
 
 collection.trigger('sync');
 view.trigger('animation-complete'); // will trigger the =>[1] statement
+```
+
+### Instalation:
+```
+$ jspm install npm:bb-multi-events
+```
+```
+$ npm install bb-multi-events
 ```
