@@ -23,7 +23,7 @@ view.trigger('animation-complete'); // will trigger the =>[1] statement
 
 ### Instalation:
 ```
-$ jspm install npm:bb-bulti-events
+$ jspm install npm:bb-multi-events
 ```
 ```
 $ npm install bb-multi-events
