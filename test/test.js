@@ -4,8 +4,8 @@ var Backbone = require('backbone'),
     chai = require('chai'),
     sinonChai = require('sinon-chai');
 var expect = chai.expect;
-var onAll = require('../lib/on_all'),
-    onceAll = require('../lib/once_all');
+var onAll = require('../on_all'),
+    onceAll = require('../once_all');
 
 var view = _.extend({}, Backbone.Events),
     collection = _.extend({}, Backbone.Events);
