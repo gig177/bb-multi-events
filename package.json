@@ -1,6 +1,6 @@
 {
   "name": "bb-multi-events",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "registry": "npm",
   "description": "Backbone multiple events catcher",
   "main": "index",
