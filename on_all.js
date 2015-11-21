@@ -9,7 +9,7 @@ module.exports = function onAll(sources, clean, handler) {
 
     var eventsStack = [];
     var eventNames = Object.keys(sources);
-    var cb = eventName => {
+    var cb = function(eventName) {
         if (eventsStack.indexOf(eventName) === -1)
             eventsStack.push(eventName);
 
@@ -19,14 +19,14 @@ module.exports = function onAll(sources, clean, handler) {
         }
     };
 
-    eventNames.forEach(eventName => {
-        sources[eventName].on(eventName, () => {
+    eventNames.forEach(function(eventName) {
+        sources[eventName].on(eventName, function() {
             cb(eventName);
         });
     });
 
     if (clean) {
-        clean.on(cleanEvent, () => {
+        clean.on(cleanEvent, function() {
             eventsStack = [];
         });
     }

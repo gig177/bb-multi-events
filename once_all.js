@@ -6,7 +6,7 @@ var _ = require('underscore');
 module.exports = function onceAll(sources, handler) {
     var eventNames = Object.keys(sources);
     handler = _.after(eventNames.length, handler);
-    eventNames.forEach(eventName => {
+    eventNames.forEach(function(eventName) {
         sources[eventName].once(eventName, handler);
     });
-}
+};
