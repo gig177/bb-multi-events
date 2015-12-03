@@ -1,5 +1,5 @@
 # bb-multi-events
-Simple example:
+Subscribe on mulitple events permanently:
 ```javascript
 var _ = require('underscore'),
     Events = require('backbone').Events;
@@ -20,7 +20,20 @@ view.trigger('render-page'); // will clean the events stack
 collection.trigger('sync');
 view.trigger('animation-complete'); // will trigger the =>[1] statement
 ```
+Subscribe on mulitple events just once:
+```javascript
+...
+onceAll({ 'animation-complete': view, 'sync': collection }, () => {
+    console.log('render page after animation and sync collection'); // [2]
+});
 
+view.trigger('animation-complete'); 
+collection.trigger('sync'); // will trigger the =>[2] statement
+
+view.trigger('animation-complete'); // mute
+collection.trigger('sync'); // mute
+...
+```
 ### Instalation:
 ```
 $ jspm install npm:bb-multi-events
