@@ -30,9 +30,8 @@ onceAll({ 'animation-complete': view, 'sync': collection }, () => {
 view.trigger('animation-complete'); 
 collection.trigger('sync'); // will trigger the =>[2] statement
 
-view.trigger('animation-complete'); // mute
+view.trigger('animation-complete');
 collection.trigger('sync'); // mute
-...
 ```
 ### Instalation:
 ```
